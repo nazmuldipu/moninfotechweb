@@ -1,22 +1,23 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top dark-primary-color">
   <div class="container">
-    <a class="navbar-brand p-0" (click)="toggleCollapse()" routerLink="http://www.moninfotech.com/" routerLinkActive="active" >MON INFOTECH</a>
-  <button class="navbar-toggler"  (click)="toggleCollapse()" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse show" id="navbarCollapse" [class.show]="show">
-    <ul class="navbar-nav mr-auto">
-      
-    </ul>
+    <a class="navbar-brand p-0" (click)="toggleCollapse()" routerLink="/" routerLinkActive="active">MON INFOTECH</a>
+    <button class="navbar-toggler" (click)="toggleCollapse()" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse show" id="navbarCollapse" [class.show]="show">
+      <ul class="navbar-nav mr-auto">
 
-    <ul class="nav navbar-nav navbar-right">
-      <li class="nav-item ">
-        <a class="nav-link" (click)="toggleCollapse()" href="https://school.moninfotech.com" routerLinkActive="active">SCHOOL</a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link" (click)="toggleCollapse()" href="https://academy.moninfotech.com" routerLinkActive="active">SMS SERVICE</a>
-      </li>
-    </ul>
-  </div>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item ">
+          <a class="nav-link" (click)="toggleCollapse()" routerLink="/career" routerLinkActive="active">CAREER</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" (click)="toggleCollapse()" href="https://academy.moninfotech.com" routerLinkActive="active">SMS SERVICE</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
